@@ -25,7 +25,9 @@ export default class GalacticAge{
   }
   calculateLifeExpectancy()
   {
- 
+    let lifeExpectancy= 60;
+    return lifeExpectancy;
+    
   }
 
 }
