@@ -31,5 +31,14 @@ describe('GalacticAge', () => {
 
   });
 
+  test('Should create a GalacticAge object with the given age,diet,activityLevel and residenceType', () => {
+    const galacticAge = new GalacticAge(24,mediterranean,high,seaside);
+    expect(galacticAge.age).toEqual(24);
+    expect(galacticAge.diet).toEqual(mediterranean);
+    expect(galacticAge.activity_level).toEqual(high);
+    expect(galacticAge.residence_type).toEqual(seaside);
+
+  });
+
 
 });
