@@ -87,5 +87,11 @@ describe('GalacticAge', () => {
     expect(galacticAge.ageInPlanets()).toEqual("0.08");
   });
 
+  test('Should return the years  left to live in this planet', () => {
+    const galacticAge = new GalacticAge(30,"mediterranean","high","seaside","Mercury");
+    expect(galacticAge.calculateExpectancyInPlanet()).toEqual("180.16 years you have left to live in Mercury.");
+  });
+
+
 
 });
