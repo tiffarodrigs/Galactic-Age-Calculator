@@ -4,7 +4,6 @@ export default class GalacticAge{
   }
   AgeInMercuryYears(){
     let mercuryAge=(this.age/.24).toFixed(2);
-    console.log(mercuryAge);
     return `${mercuryAge} mercury years.`  ;
   }
   AgeInVenusYears(){
@@ -13,6 +12,7 @@ export default class GalacticAge{
   }
 
   AgeInMarsYears(){
-
+    let marsAge=(this.age/1.88).toFixed(2);
+    return `${marsAge} Mars years.`  ;
   }
 }
