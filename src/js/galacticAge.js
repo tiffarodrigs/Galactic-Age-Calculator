@@ -37,12 +37,22 @@ export default class GalacticAge{
         Low:1,
         High:3
       };
+     let residenceType={
+        Seaside: 5,
+        Mountain : 4,
+        Farm :3,
+        Desert:2
+      }
       if(this.diet!=undefined){
       lifeExpectancy += dietType[this.diet];
       }
       if(this.activity_level!=undefined){
         lifeExpectancy += activityLevel[this.activity_level];
         }
+
+        if(this.residence_type!=undefined){
+          lifeExpectancy += residenceType[this.residence_type];
+          }
 
     return lifeExpectancy;
   }
