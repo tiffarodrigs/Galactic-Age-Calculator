@@ -16,6 +16,8 @@ export default class GalacticAge{
     return `${marsAge} Mars years.`  ;
   }
   AgeInJupiterYears(){
+    let jupiterAge=(this.age/11.86).toFixed(2);
+    return `${jupiterAge} Jupiter years.`  ;
 
   }
 }
