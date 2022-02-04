@@ -78,7 +78,14 @@ describe('GalacticAge', () => {
     const galacticAge = new GalacticAge(1,"mediterranean","high","seaside","Venus");
     expect(galacticAge.ageInPlanets()).toEqual("1.61");
   });
-
+  test('Should return age in Mars years', () => {
+    const galacticAge = new GalacticAge(1,"mediterranean","high","seaside","Mars");
+    expect(galacticAge.ageInPlanets()).toEqual("0.53");
+  });
+  test('Should return age in Jupiter years', () => {
+    const galacticAge = new GalacticAge(1,"mediterranean","high","seaside","Jupiter");
+    expect(galacticAge.ageInPlanets()).toEqual("0.08");
+  });
 
 
 });
