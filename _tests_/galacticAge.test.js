@@ -55,6 +55,11 @@ describe('GalacticAge', () => {
     expect(galacticAge.calculateLifeExpectancy()).toEqual(68)
 
   });
+  test('Should return life expectancy as 73 with just age  and diet as Mediterranean,activity Level as high and residence as seaside', () => {
+    const galacticAge = new GalacticAge(24,"Mediterranean","High","Seaside");
+    expect(galacticAge.calculateLifeExpectancy()).toEqual(74)
+
+  });
 
 
 });
