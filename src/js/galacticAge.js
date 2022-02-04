@@ -4,25 +4,29 @@ export default class GalacticAge{
     this.diet =diet;
     this.activity_level=activity_level;
     this.residence_type=residence_type;
-  }
-  AgeInMercuryYears(){
-    let mercuryAge=(this.age/.24).toFixed(2);
-    return `${mercuryAge} mercury years.`  ;
-  }
-  AgeInVenusYears(){
-    let venusAge=(this.age/.62).toFixed(2);
-    return `${venusAge} Venus years.`  ;
-  }
-
-  AgeInMarsYears(){
-    let marsAge=(this.age/1.88).toFixed(2);
-    return `${marsAge} Mars years.`  ;
-  }
-  AgeInJupiterYears(){
-    let jupiterAge=(this.age/11.86).toFixed(2);
-    return `${jupiterAge} Jupiter years.`  ;
+    //this.planet=planet
 
   }
+  // AgeInMercuryYears(){
+    
+  //   let mercuryAge=(this.age/.24).toFixed(2);
+  //   return mercuryAge ;
+  // }
+  // AgeInVenusYears(){
+  //   let venusAge=(this.age/.62).toFixed(2);
+  //   return venusAge;
+  // }
+
+  // AgeInMarsYears(){
+  //   let marsAge=(this.age/1.88).toFixed(2);
+  //   return marsAge;
+  // }
+  // AgeInJupiterYears(){
+  //   let jupiterAge=(this.age/11.86).toFixed(2);
+  //   return jupiterAge;
+
+  // }
+
   calculateLifeExpectancy()
   {
     let lifeExpectancy= 60;
