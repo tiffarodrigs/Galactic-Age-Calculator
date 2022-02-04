@@ -25,5 +25,11 @@ describe('GalacticAge', () => {
 
   });
 
+  test('Should return age in Jupiter years', () => {
+    const galacticAge = new GalacticAge(1);
+    expect(galacticAge.AgeInJupiterYears()).toEqual("0.08 Jupiter years.");
+
+  });
+
 
 });
