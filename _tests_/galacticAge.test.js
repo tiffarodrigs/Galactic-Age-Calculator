@@ -40,5 +40,11 @@ describe('GalacticAge', () => {
 
   });
 
+  test('Should return life expectancy as 60 with just age parameter', () => {
+    const galacticAge = new GalacticAge(24,);
+    expect(galacticAge.calculateLifeExpectancy()).toEqual(60)
+
+  });
+
 
 });

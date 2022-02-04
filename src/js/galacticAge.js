@@ -23,4 +23,9 @@ export default class GalacticAge{
     return `${jupiterAge} Jupiter years.`  ;
 
   }
+  calculateLifeExpectancy()
+  {
+ 
+  }
+
 }
