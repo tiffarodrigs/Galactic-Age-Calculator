@@ -7,4 +7,7 @@ export default class GalacticAge{
     console.log(mercuryAge);
     return `${mercuryAge} mercury years.`  ;
   }
+  AgeInVenusYears(){
+
+  }
 }

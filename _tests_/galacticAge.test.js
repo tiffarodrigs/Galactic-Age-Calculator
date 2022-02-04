@@ -14,5 +14,11 @@ describe('GalacticAge', () => {
 
   });
 
+  test('Should return age in Venus years', () => {
+    const galacticAge = new GalacticAge(1);
+    expect(galacticAge.AgeInVenusYears()).toEqual("1.61 Venus years.");
+
+  });
+
 
 });
