@@ -8,25 +8,37 @@ export default class GalacticAge {
 
   }
 
-  calculateAge(age, planetAge) {
-    let planetAgeinEarthYrs = (age / planetAge).toFixed(2);
-    return planetAgeinEarthYrs;
-  }
-
-  ageInPlanets() {
+  calculateAge(age, planet) {
     let planetEarthYears = {
       Mercury: .24,
       Venus: .62,
       Mars: 1.88,
       Jupiter: 11.86
     }
+    let planetAgeinEarthYrs = (age / planetEarthYears[planet]).toFixed(2);
+    return planetAgeinEarthYrs;
+  }
+
+  ageInPlanets() {
+ 
     let ageInPlanetYear;
-    ageInPlanetYear = this.calculateAge(this.age, planetEarthYears[this.planet]);
+    ageInPlanetYear = this.calculateAge(this.age, this.planet);
     return ageInPlanetYear;
 
   }
   calculateExpectancyInPlanet(){
-    
+    let ExpectancyinEarth = this.calculateLifeExpectancy();
+    console.log(ExpectancyinEarth);
+    let planetExpectancy = this.calculateAge(ExpectancyinEarth,this.planet);
+    console.log(planetExpectancy);  
+    let planetYears = this.ageInPlanets();
+    console.log(planetYears); 
+    if (planetExpectancy < planetYears) {
+      return `${(planetYears-planetExpectancy).toFixed(2)} past the life expectancy.`;
+    }
+    if (planetExpectancy > planetYears) {
+      return `${(planetExpectancy-planetYears).toFixed(2)} years you have left to live in ${this.planet}.`;
+    }
   }
 
 

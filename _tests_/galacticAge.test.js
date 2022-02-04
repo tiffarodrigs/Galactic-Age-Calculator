@@ -62,34 +62,34 @@ describe('GalacticAge', () => {
   });
  
   test('Should create a GalacticAge object with the given age,diet,activityLevel and residenceType and planet', () => {
-    const galacticAge = new GalacticAge(24,"mediterranean","high","seaside","Mercury");
+    const galacticAge = new GalacticAge(24,"Mediterranean","High","Seaside","Mercury");
     expect(galacticAge.age).toEqual(24);
-    expect(galacticAge.diet).toEqual("mediterranean");
-    expect(galacticAge.activity_level).toEqual("high");
-    expect(galacticAge.residence_type).toEqual("seaside");
+    expect(galacticAge.diet).toEqual("Mediterranean");
+    expect(galacticAge.activity_level).toEqual("High");
+    expect(galacticAge.residence_type).toEqual("Seaside");
     expect(galacticAge.planet).toEqual("Mercury");
 
   });
   test('Should return age in Mercury years', () => {
-    const galacticAge = new GalacticAge(1,"mediterranean","high","seaside","Mercury");
+    const galacticAge = new GalacticAge(1,"Mediterranean","High","Seaside","Mercury");
     expect(galacticAge.ageInPlanets()).toEqual("4.17");
   });
   test('Should return age in Venus years', () => {
-    const galacticAge = new GalacticAge(1,"mediterranean","high","seaside","Venus");
+    const galacticAge = new GalacticAge(1,"Mediterranean","High","Seaside","Venus");
     expect(galacticAge.ageInPlanets()).toEqual("1.61");
   });
   test('Should return age in Mars years', () => {
-    const galacticAge = new GalacticAge(1,"mediterranean","high","seaside","Mars");
+    const galacticAge = new GalacticAge(1,"Mediterranean","High","Seaside","Mars");
     expect(galacticAge.ageInPlanets()).toEqual("0.53");
   });
   test('Should return age in Jupiter years', () => {
-    const galacticAge = new GalacticAge(1,"mediterranean","high","seaside","Jupiter");
+    const galacticAge = new GalacticAge(1,"Mediterranean","High","Seaside","Jupiter");
     expect(galacticAge.ageInPlanets()).toEqual("0.08");
   });
 
   test('Should return the years  left to live in this planet', () => {
-    const galacticAge = new GalacticAge(30,"mediterranean","high","seaside","Mercury");
-    expect(galacticAge.calculateExpectancyInPlanet()).toEqual("180.16 years you have left to live in Mercury.");
+    const galacticAge = new GalacticAge(30,"Mediterranean","High","Seaside","Mercury");
+    expect(galacticAge.calculateExpectancyInPlanet()).toEqual("179.17 years you have left to live in Mercury.");
   });
 
 
