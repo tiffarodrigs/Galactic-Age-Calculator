@@ -1,7 +1,9 @@
 export default class GalacticAge{
-  constructor(age){
+  constructor(age,diet,activity_level,residence_type){
     this.age = age;
-    
+    this.diet =diet;
+    this.activity_level=activity_level;
+    this.residence_type=residence_type;
   }
   AgeInMercuryYears(){
     let mercuryAge=(this.age/.24).toFixed(2);
