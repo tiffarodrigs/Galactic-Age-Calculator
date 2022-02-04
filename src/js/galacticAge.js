@@ -8,6 +8,11 @@ export default class GalacticAge{
     return `${mercuryAge} mercury years.`  ;
   }
   AgeInVenusYears(){
+    let venusAge=(this.age/.62).toFixed(2);
+    return `${venusAge} Venus years.`  ;
+  }
+
+  AgeInMarsYears(){
 
   }
 }
