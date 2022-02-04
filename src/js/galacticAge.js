@@ -33,11 +33,16 @@ export default class GalacticAge{
       PlantBased : 3,
       Mediterranean : 5,
       };
+     let activityLevel={
+        Low:1,
+        High:3
+      };
       if(this.diet!=undefined){
-console.log(this.diet);
-console.log(dietType[this.diet]);
       lifeExpectancy += dietType[this.diet];
       }
+      if(this.activity_level!=undefined){
+        lifeExpectancy += activityLevel[this.activity_level];
+        }
 
     return lifeExpectancy;
   }
