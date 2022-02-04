@@ -92,6 +92,16 @@ describe('GalacticAge', () => {
     expect(galacticAge.calculateExpectancyInPlanet()).toEqual("179.17 years you have left to live in Mercury.");
   });
 
+  test('Should return the years  outlived', () => {
+    const galacticAge = new GalacticAge(90,"Mediterranean","High","Seaside","Mercury");
+    expect(galacticAge.calculateExpectancyInPlanet()).toEqual("70.83 past the life expectancy.");
+  });
+
+  test('Should return the years  outlived', () => {
+    const galacticAge = new GalacticAge(73,"Mediterranean","High","Seaside","Mercury");
+    expect(galacticAge.calculateExpectancyInPlanet()).toEqual("Age and Expectancy same.");
+  });
+
 
 
 });

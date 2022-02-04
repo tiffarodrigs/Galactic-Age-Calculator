@@ -36,8 +36,11 @@ export default class GalacticAge {
     if (planetExpectancy < planetYears) {
       return `${(planetYears-planetExpectancy).toFixed(2)} past the life expectancy.`;
     }
-    if (planetExpectancy > planetYears) {
+    else if(planetExpectancy > planetYears) {
       return `${(planetExpectancy-planetYears).toFixed(2)} years you have left to live in ${this.planet}.`;
+    }
+    else{
+      return "Age and Expectancy same.";
     }
   }
 
