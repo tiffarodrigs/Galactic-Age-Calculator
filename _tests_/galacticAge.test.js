@@ -8,9 +8,11 @@ describe('GalacticAge', () => {
 
   });
 
-  test('Should return age in Mercury age', () => {
+  test('Should return age in Mercury years', () => {
     const galacticAge = new GalacticAge(1);
-    expect(galacticAge.AgeInMercuryYears()).toEqual(4);
+    expect(galacticAge.AgeInMercuryYears()).toEqual("4.17 mercury years.");
 
   });
+
+
 });

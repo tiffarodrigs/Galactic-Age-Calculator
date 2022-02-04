@@ -3,8 +3,8 @@ export default class GalacticAge{
     this.age = age;
   }
   AgeInMercuryYears(){
-    let mercuryAge=Math.floor(this.age/.24);
+    let mercuryAge=(this.age/.24).toFixed(2);
     console.log(mercuryAge);
-    return mercuryAge;
+    return `${mercuryAge} mercury years.`  ;
   }
 }
