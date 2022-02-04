@@ -26,8 +26,20 @@ export default class GalacticAge{
   calculateLifeExpectancy()
   {
     let lifeExpectancy= 60;
-    return lifeExpectancy;
     
+    let dietType={
+      LowCarb : 1,
+      Paleo : 2,
+      PlantBased : 3,
+      Mediterranean : 5,
+      };
+      if(this.diet!=undefined){
+console.log(this.diet);
+console.log(dietType[this.diet]);
+      lifeExpectancy += dietType[this.diet];
+      }
+
+    return lifeExpectancy;
   }
 
 }
