@@ -4,7 +4,7 @@ export default class GalacticAge{
     this.diet =diet;
     this.activity_level=activity_level;
     this.residence_type=residence_type;
-    this.planet=planet
+    this.planet=planet;
 
   }
   // AgeInMercuryYears(){
@@ -26,6 +26,23 @@ export default class GalacticAge{
   //   return jupiterAge;
 
   // }
+  calculateAge(age,planetAge){
+    let planetAgeinEarthYrs=(age/planetAge).toFixed(2);
+    return planetAgeinEarthYrs;
+  }
+
+  ageInPlanets(){
+    let planetEarthYears={
+      Mercury:.24,
+      Venus: .62,
+      Mars : 1.88,
+      Jupiter : 11.86
+    }
+  let ageInPlanetYear ;
+  ageInPlanetYear = this.calculateAge(this.age,planetEarthYears[this.planet]);
+  return ageInPlanetYear;
+  }
+
 
   calculateLifeExpectancy()
   {

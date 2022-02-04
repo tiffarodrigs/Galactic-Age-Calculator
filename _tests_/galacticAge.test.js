@@ -70,5 +70,15 @@ describe('GalacticAge', () => {
     expect(galacticAge.planet).toEqual("Mercury");
 
   });
+  test('Should return age in Mercury years', () => {
+    const galacticAge = new GalacticAge(1,"mediterranean","high","seaside","Mercury");
+    expect(galacticAge.ageInPlanets()).toEqual("4.17");
+  });
+  test('Should return age in Venus years', () => {
+    const galacticAge = new GalacticAge(1,"mediterranean","high","seaside","Venus");
+    expect(galacticAge.ageInPlanets()).toEqual("1.61");
+  });
+
+
 
 });
