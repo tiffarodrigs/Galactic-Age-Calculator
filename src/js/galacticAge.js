@@ -1,10 +1,10 @@
 export default class GalacticAge{
-  constructor(age,diet,activity_level,residence_type){
+  constructor(age,diet,activity_level,residence_type,planet){
     this.age = age;
     this.diet =diet;
     this.activity_level=activity_level;
     this.residence_type=residence_type;
-    //this.planet=planet
+    this.planet=planet
 
   }
   // AgeInMercuryYears(){
