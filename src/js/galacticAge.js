@@ -20,26 +20,20 @@ export default class GalacticAge {
   }
 
   ageInPlanets() {
- 
     let ageInPlanetYear;
     ageInPlanetYear = this.calculateAge(this.age, this.planet);
     return ageInPlanetYear;
-
   }
-  calculateExpectancyInPlanet(){
+  
+  calculateExpectancyInPlanet() {
     let ExpectancyinEarth = this.calculateLifeExpectancy();
-    console.log(ExpectancyinEarth);
-    let planetExpectancy = this.calculateAge(ExpectancyinEarth,this.planet);
-    console.log(planetExpectancy);  
+    let planetExpectancy = this.calculateAge(ExpectancyinEarth, this.planet);
     let planetYears = this.ageInPlanets();
-    console.log(planetYears); 
     if (planetExpectancy < planetYears) {
       return `${(planetYears-planetExpectancy).toFixed(2)} past the life expectancy.`;
-    }
-    else if(planetExpectancy > planetYears) {
+    } else if (planetExpectancy > planetYears) {
       return `${(planetExpectancy-planetYears).toFixed(2)} years you have left to live in ${this.planet}.`;
-    }
-    else{
+    } else {
       return "Age and Expectancy same.";
     }
   }
