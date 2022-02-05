@@ -71,7 +71,7 @@ describe('GalacticAge', () => {
 
   test('Should return the years  outlived', () => {
     const galacticAge = new GalacticAge(90, "Mediterranean", "High", "Seaside", "Mercury");
-    expect(galacticAge.calculateExpectancyInPlanet()).toEqual("70.83 past the life expectancy.");
+    expect(galacticAge.calculateExpectancyInPlanet()).toEqual("70.83 years past the life expectancy.");
   });
 
   test('Should return the years  outlived', () => {

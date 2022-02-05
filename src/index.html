@@ -6,13 +6,14 @@
   </head>
 
   <body>
+    <div class="container">
     <div>
       <h5>Age</h5>
-      <input type="number">
+      <input type="number" id="age">
     </div>
     <div>
       <h5>Diet Type</h5>
-      <input type="radio" id="LowCarb" name="diet" value="LowCarb">
+      <input type="radio" id="LowCarb" name="diet" value="LowCarb" checked>
       <label for="LowCarb">Low Carb</label>
 
       <input type="radio" id="Paleo" name="diet" value="Paleo">
@@ -26,7 +27,7 @@
     </div>
     <div>
       <h5>Residence type</h5>
-      <input type="radio" id="Seaside" name="residence_type" value="Seaside">
+      <input type="radio" id="Seaside" name="residence_type" value="Seaside" checked>
       <label for="Seaside">Sea Side</label>
 
       <input type="radio" id="Mountain" name="residence_type" value="Mountain">
@@ -42,7 +43,7 @@
     <div>
       <h5>Activity Level</h5>
 
-      <input type="radio" id="High" name="activity_level" value="High">
+      <input type="radio" id="High" name="activity_level" value="High" checked>
       <label for="High">High</label>
 
       <input type="radio" id="Low" name="activity_level" value="Low">
@@ -51,7 +52,7 @@
     <div>
       <h5>Choose Planet</h5>
 
-      <input type="radio" id="Mercury" name="Planet" value="Mercury">
+      <input type="radio" id="Mercury" name="Planet" value="Mercury" checked>
       <label for="Mercury">Mercury</label>
 
       <input type="radio" id="Venus" name="Planet" value="Venus">
@@ -64,7 +65,11 @@
       <label for="Jupiter">Jupiter</label>
     </div>
 <button type="button"id ="AgeExpectancy" >Age and Expectancy</button>
+<div id="resultBox">
+  <p>Your age is <span></span> in <span></span> and <span></span></p>
 
+</div>
+</div>
   </body>
 
 </html>

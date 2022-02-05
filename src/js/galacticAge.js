@@ -24,13 +24,13 @@ export default class GalacticAge {
     ageInPlanetYear = this.calculateAge(this.age, this.planet);
     return ageInPlanetYear;
   }
-  
+
   calculateExpectancyInPlanet() {
     let ExpectancyinEarth = this.calculateLifeExpectancy();
     let planetExpectancy = this.calculateAge(ExpectancyinEarth, this.planet);
     let planetYears = this.ageInPlanets();
     if (planetExpectancy < planetYears) {
-      return `${(planetYears-planetExpectancy).toFixed(2)} past the life expectancy.`;
+      return `${(planetYears-planetExpectancy).toFixed(2)} years past the life expectancy.`;
     } else if (planetExpectancy > planetYears) {
       return `${(planetExpectancy-planetYears).toFixed(2)} years you have left to live in ${this.planet}.`;
     } else {
