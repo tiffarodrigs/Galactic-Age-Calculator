@@ -7,69 +7,79 @@
 
   <body>
     <div class="container">
-    <div>
-      <h5>Age</h5>
-      <input type="number" id="age">
+      <h3> Galactic Age Calculator</h3>
+      <div class ="inputBox">
+        <div class="input">
+          <h5>Age</h5>
+          <input type="number" id="age" required>
+        </div>
+        <div class="input">
+          <h5>Diet Type</h5>
+          <input type="radio" id="LowCarb" name="diet" value="LowCarb" checked>
+          <label for="LowCarb">Low Carb</label>
+
+          <input type="radio" id="Paleo" name="diet" value="Paleo">
+          <label for="Paleo">Paleo</label>
+
+          <input type="radio" id="PlantBased" name="diet" value="PlantBased">
+          <label for="PlantBased">Plant Based</label>
+
+          <input type="radio" id="Mediterranean" name="diet" value="Mediterranean">
+          <label for="Mediterranean">Mediterranean</label>
+        </div>
+        <div class="input">
+          <h5>Residence type</h5>
+          <input type="radio" id="Seaside" name="residence_type" value="Seaside" checked>
+          <label for="Seaside">Sea Side</label>
+
+          <input type="radio" id="Mountain" name="residence_type" value="Mountain">
+          <label for="Mountain">Mountain</label>
+
+          <input type="radio" id="Farm" name="residence_type" value="Farm">
+          <label for="Farm">Farm</label>
+
+          <input type="radio" id="Desert" name="residence_type" value="Desert">
+          <label for="Desert">Desert</label>
+        </div>
+
+        <div class="input">
+          <h5>Activity Level</h5>
+
+          <input type="radio" id="High" name="activity_level" value="High" checked>
+          <label for="High">High</label>
+
+          <input type="radio" id="Low" name="activity_level" value="Low">
+          <label for="Low">Low</label>
+        </div>
+
+        <div class="input">
+          <h5>Choose Planet</h5>
+
+          <input type="radio" id="Mercury" name="Planet" value="Mercury" checked>
+          <label for="Mercury">Mercury</label>
+
+          <input type="radio" id="Venus" name="Planet" value="Venus">
+          <label for="Venus">Venus</label>
+
+          <input type="radio" id="Mars" name="Planet" value="Mars">
+          <label for="Mars">Mars</label>
+
+          <input type="radio" id="Jupiter" name="Planet" value="Jupiter">
+          <label for="Jupiter">Jupiter</label>
+        </div>
+
+        <div class="input">
+          <button type="button" id="AgeExpectancy">Age and Expectancy</button>
+        </div>
+      </div>
+
+      <div class="input" id="resultBox">
+        <p>Age in Earth : <span id="earthAge"> </span></p>
+        <p>Age in <span class="planetName"> </span> : <span id="planetAge"></span></p>
+        <p>Expectancy in <span class="planetName"></span> : <span id="planetExpectancy"></span></p>
+      </div>
+
     </div>
-    <div>
-      <h5>Diet Type</h5>
-      <input type="radio" id="LowCarb" name="diet" value="LowCarb" checked>
-      <label for="LowCarb">Low Carb</label>
-
-      <input type="radio" id="Paleo" name="diet" value="Paleo">
-      <label for="Paleo">Paleo</label>
-
-      <input type="radio" id="PlantBased" name="diet" value="PlantBased">
-      <label for="PlantBased">Plant Based</label>
-
-      <input type="radio" id="Mediterranean" name="diet" value="Mediterranean">
-      <label for="Mediterranean">Mediterranean</label>
-    </div>
-    <div>
-      <h5>Residence type</h5>
-      <input type="radio" id="Seaside" name="residence_type" value="Seaside" checked>
-      <label for="Seaside">Sea Side</label>
-
-      <input type="radio" id="Mountain" name="residence_type" value="Mountain">
-      <label for="Mountain">Mountain</label>
-
-      <input type="radio" id="Farm" name="residence_type" value="Farm">
-      <label for="Farm">Farm</label>
-
-      <input type="radio" id="Desert" name="residence_type" value="Desert">
-      <label for="Desert">Desert</label>
-    </div>
-
-    <div>
-      <h5>Activity Level</h5>
-
-      <input type="radio" id="High" name="activity_level" value="High" checked>
-      <label for="High">High</label>
-
-      <input type="radio" id="Low" name="activity_level" value="Low">
-      <label for="Low">Low</label>
-    </div>
-    <div>
-      <h5>Choose Planet</h5>
-
-      <input type="radio" id="Mercury" name="Planet" value="Mercury" checked>
-      <label for="Mercury">Mercury</label>
-
-      <input type="radio" id="Venus" name="Planet" value="Venus">
-      <label for="Venus">Venus</label>
-
-      <input type="radio" id="Mars" name="Planet" value="Mars">
-      <label for="Mars">Mars</label>
-
-      <input type="radio" id="Jupiter" name="Planet" value="Jupiter">
-      <label for="Jupiter">Jupiter</label>
-    </div>
-<button type="button"id ="AgeExpectancy" >Age and Expectancy</button>
-<div id="resultBox">
-  <p>Your age is <span></span> in <span></span> and <span></span></p>
-
-</div>
-</div>
   </body>
 
 </html>

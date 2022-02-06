@@ -79,6 +79,4 @@ describe('GalacticAge', () => {
     expect(galacticAge.calculateExpectancyInPlanet()).toEqual("Age and Expectancy same.");
   });
 
-
-
 });

@@ -1,9 +1,32 @@
-/* styles*/
-body{
-  background-color: darkolivegreen;
-
-
+body {
+  background-image: url("../../src/assets/images/image6.jpeg");
+  background-repeat: repeat;
+  background-size: contain;
+  color: bisque;
 }
-.container{
+
+.container {
   text-align: center;
+}
+
+#resultBox {
+  display: none;
+  border: 1px solid bisque;
+  border-radius: 25px;
+}
+
+.input {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+h5 {
+  text-decoration: underline;
+}
+
+.inputBox {
+  border: 1px solid bisque;
+  border-radius: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }

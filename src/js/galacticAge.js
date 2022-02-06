@@ -5,7 +5,6 @@ export default class GalacticAge {
     this.activity_level = activity_level;
     this.residence_type = residence_type;
     this.planet = planet;
-
   }
 
   calculateAge(age, planet) {
@@ -14,7 +13,7 @@ export default class GalacticAge {
       Venus: .62,
       Mars: 1.88,
       Jupiter: 11.86
-    }
+    };
     let planetAgeinEarthYrs = (age / planetEarthYears[planet]).toFixed(2);
     return planetAgeinEarthYrs;
   }
@@ -29,20 +28,19 @@ export default class GalacticAge {
     let ExpectancyinEarth = this.calculateLifeExpectancy();
     let planetExpectancy = this.calculateAge(ExpectancyinEarth, this.planet);
     let planetYears = this.ageInPlanets();
-    if (planetExpectancy < planetYears) {
-      return `${(planetYears-planetExpectancy).toFixed(2)} years past the life expectancy.`;
-    } else if (planetExpectancy > planetYears) {
-      return `${(planetExpectancy-planetYears).toFixed(2)} years you have left to live in ${this.planet}.`;
+    let result;
+    if (parseInt(planetExpectancy) < parseInt(planetYears)) {
+      result = `${(planetYears-planetExpectancy).toFixed(2)} years past the life expectancy.`;
+    } else if (parseInt(planetExpectancy) > parseInt(planetYears)) {
+      result = `${(planetExpectancy-planetYears).toFixed(2)} years you have left to live in ${this.planet}.`;
     } else {
-      return "Age and Expectancy same.";
+      result = "Age and Expectancy same.";
     }
+    return result;
   }
-
-
 
   calculateLifeExpectancy() {
     let lifeExpectancy = 60;
-
     let dietType = {
       LowCarb: 1,
       Paleo: 2,
@@ -58,19 +56,16 @@ export default class GalacticAge {
       Mountain: 4,
       Farm: 3,
       Desert: 2
-    }
+    };
     if (this.diet != undefined) {
       lifeExpectancy += dietType[this.diet];
     }
     if (this.activity_level != undefined) {
       lifeExpectancy += activityLevel[this.activity_level];
     }
-
     if (this.residence_type != undefined) {
       lifeExpectancy += residenceType[this.residence_type];
     }
-
     return lifeExpectancy;
   }
-
 }
