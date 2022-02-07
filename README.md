@@ -24,22 +24,15 @@ Returns their age in Jupiter years. (A Jupiter year is 11.86 Earth years.)
 Determines how many years a user has left to live on each planet absed on their lifestyle. 
 If a user has already surpassed the average life expectancy, return the number of years they have lived past the life expectancy. 
 
-## Setup/Installation Requirements
 
+
+## Setup/Installation Requirements
 
 * _Clone this repository to your desktop._
 * _run $ npm install._
 * _Run $npm run build._
 * _Run $npm start_
 * _Web page will open in the browser_
-
-
-
-## Web Page Link
-[https://tiffarodrigs.github.io/Galactic-Age-Calculator/]
-(https://tiffarodrigs.github.io/Galactic-Age-Calculator/)
-
-
 
 
 ## License
